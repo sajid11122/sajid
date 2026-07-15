@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Offline Life - Sajid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0d0e12;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* ব্যাক বাটন প্রিমিয়াম স্টাইল */
+        .back-btn {
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            margin-bottom: 25px; 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+        }
+
+        /* স্ট্যাটাস ডট গ্লো */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-dot.pink { 
+            background: #ff007f; 
+            box-shadow: 0 0 12px #ff007f; 
+        }
+
+        /* প্রিমিয়াম অফলাইন কন্টেন্ট কার্ড */
+        .offline-card {
+            background: rgba(255, 255, 255, 0.02); 
+            padding: 25px; 
+            border-radius: 16px; 
+            border: 1px solid rgba(255, 0, 127, 0.15); 
+            box-shadow: 0 8px 32px 0 rgba(255, 0, 127, 0.03);
+            color: #e2e8f0; 
+            font-family: 'Hind Siliguri', sans-serif; 
+            line-height: 1.8; 
+            text-align: left;
+        }
+
+        .offline-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+        }
+
+        .offline-card p {
+            font-size: 15px;
+            color: #b3b8cf;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        .offline-card p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrapper">
+        
+        <!-- শিরোনাম -->
+        <div class="profile-info" style="margin-top: 40px;">
+            <h1>অфলাইন লাইফ</h1>
+            <p style="font-family: 'Hind Siliguri', sans-serif; color: #8a8f9f; font-size: 14px; margin-top: 5px;">যোগাযোগ ও বাস্তব জীবনের গল্প</p>
+        </div>
+
+        <div class="links-container">
+            
+            <!-- আইফোন স্টাইল ব্যাক বাটন -->
+<a href="index.html" class="action-card" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center; margin-bottom: 25px; padding: 10px 0; font-family: 'Hind Siliguri', sans-serif;">
+    <div style="display: flex; align-items: center; color: #007AFF;"> <!-- iOS Blue Color -->
+        <i class="fas fa-chevron-left" style="font-size: 18px; margin-right: 8px;"></i>
+        <span style="font-size: 17px; font-weight: 500;">পেছনে</span>
+    </div>
+</a>
+
+            <!-- কন্টাক্ট ও টেক্সট লেখার মূল প্রিমিয়াম কন্টেইনার -->
+            <div class="offline-card">
+                
+                <h3 style="color: #ff007f;">আমার সম্পর্কে কিছু কথা</h3>
+                
+                <p>এখানে তুই তোর অফলাইন লাইফের গল্প, পড়াশোনা, ক্যারিয়ার বা যেকোনো বড় টেক্সট ইচ্ছামতো লিখতে পারিস।</p>
+                
+                <p>নতুন কোনো প্যারাগ্রাফ শুরু করতে চাইলে জাস্ট এইরকম আরেকটি পি-ট্যাগ (&lt;p&gt;...&lt;/p&gt;) ব্যবহার করবি।</p>
+                
+                <p>থিমের সাথে মিল রেখে এটার বর্ডার এবং হেডিং কালারটা হালকা গোলাপি/পিঙ্ক শেডের (`#ff007f`) দেওয়া হয়েছে, যা তোর মেইন পেজের "OFFLINE LIFE" বাটনের ডটের সাথে একদম পারফেক্ট ম্যাচ করবে।</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

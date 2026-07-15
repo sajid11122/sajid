@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Online Life - Sajid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0d0e12;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* ব্যাক বাটন প্রিমিয়াম স্টাইল */
+        .back-btn {
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            margin-bottom: 25px; 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.2);
+        }
+
+        /* স্ট্যাটাস ডট সায়ান গ্লো */
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-dot.cyan { 
+            background: #00f2fe; 
+            box-shadow: 0 0 12px #00f2fe; 
+        }
+
+        /* প্রিমিয়াম অনলাইন কন্টেন্ট কার্ড */
+        .online-card {
+            background: rgba(255, 255, 255, 0.02); 
+            padding: 25px; 
+            border-radius: 16px; 
+            border: 1px solid rgba(0, 242, 254, 0.15); 
+            box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.03);
+            color: #e2e8f0; 
+            font-family: 'Hind Siliguri', sans-serif; 
+            line-height: 1.8; 
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .online-card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+        }
+
+        .online-card p {
+            font-size: 15px;
+            color: #b3b8cf;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        .online-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* সোশ্যাল মিডিয়া লিঙ্ক সেকশন শিরোনাম */
+        .section-title {
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 14px;
+            color: #8a8f9f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* সোশ্যাল বাটনগুলোর জন্য কাস্টম ট্রানজিশন */
+        .social-link-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+        .social-link-card:hover {
+            transform: translateY(-4px);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrapper">
+        
+        <!-- শিরোনাম -->
+        <div class="profile-info" style="margin-top: 40px;">
+            <h1>অনলাইন লাইফ</h1>
+            <p style="font-family: 'Hind Siliguri', sans-serif; color: #8a8f9f; font-size: 14px; margin-top: 5px;">আমার সোশ্যাল মিডিয়া প্রোফাইলসমূহ</p>
+        </div>
+
+        <div class="links-container">
+            
+            <!-- মেইন পেজে ফিরে যাওয়ার প্রিমিয়াম বাটন -->
+            <a href="index.html" class="back-btn action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot cyan"></span>
+                    <div class="text" style="text-align: center; width: 100%; margin-right: 8px;">
+                        <h3 style="margin: 0; font-size: 16px; letter-spacing: 1px;">← BACK TO HOME</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- টেক্সট লেখার মূল প্রিমিয়াম কন্টেইনার -->
+            <div class="online-card">
+                <h2 style="color: #00f2fe;">আমার কিছু কথা</h2>
+                <p>এখানে তোর প্রথম প্যারাগ্রাফ লিখবি। তুই যা যা মন চায় লিখতে পারিস।</p>
+                <p>যদি আরও লিখতে চাস, তবে জাস্ট এইরকম নতুন একটা পি-ট্যাগ ব্যবহার করে তার ভেতরে তোর ইচ্ছামতো টেক্সট বসিয়ে যাবি।</p>
+                <p>তোর ওয়েবসাইটের থিমের সাথে ম্যাচ করার জন্য ব্যাকগ্রাউন্ডটা হালকা ডার্ক ট্রান্সপারেন্ট করে দিয়েছি, যাতে তোর টেক্সটগুলো একদম ক্লিয়ার ও সুন্দরভাবে পড়া যায়।</p>
+            </div>
+
+            
+
+            
+            
+
+        </div>
+
+    </div>
+
+</body>
+</html>

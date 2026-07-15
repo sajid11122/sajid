@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sajid Ahmed Omar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font-Awesome আইকন প্যাক (সোশ্যাল মিডিয়ার জন্য) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0d0e12;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .premium-subtitle {
+            font-family: 'Hind Siliguri', sans-serif; 
+            font-weight: 400; 
+            color: #b3b8cf; 
+            line-height: 1.6;
+            font-size: 14px;
+            max-width: 85%;
+            margin: 10px auto 0 auto;
+            letter-spacing: 0.3px;
+            opacity: 0.9;
+        }
+        .links-container a {
+            text-decoration: none; 
+            color: inherit; 
+            display: block;
+            margin-bottom: 16px;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-container a:hover {
+            transform: translateY(-4px);
+            filter: brightness(1.2);
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .status-dot.cyan { background: #00f2fe; box-shadow: 0 0 12px #00f2fe; }
+        .status-dot.pink { background: #ff007f; box-shadow: 0 0 12px #ff007f; }
+        .status-dot.green { background: #00e676; box-shadow: 0 0 12px #00e676; }
+        .status-dot.red { background: #ff1744; box-shadow: 0 0 12px #ff1744; }
+
+        .helper-text {
+            font-family: 'Hind Siliguri', sans-serif; 
+            font-weight: normal; 
+            color: #8a8f9f;
+            font-size: 13px;
+            margin-top: 35px; 
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* --- নতুন প্রিমিয়াম অ্যাডিশনস --- */
+        
+        /* সোশ্যাল মিডিয়া আইকন গ্রিড */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .social-icons a {
+            color: #8a8f9f;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-bottom: 0 !important;
+        }
+        .social-icons a:hover {
+            color: #00f2fe;
+            transform: scale(1.2) !important;
+            filter: drop-shadow(0 0 8px #00f2fe);
+        }
+
+        /* ইমেইল কপি বাটন */
+        .email-section {
+            margin: 25px 0;
+            text-align: center;
+        }
+        .email-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: #b3b8cf;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .email-btn:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #ff007f;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(2ff, 0, 127, 0.2);
+        }
+
+        /* মেসেজ বক্স / ইনপুট সেকশন */
+        .message-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .message-box h3 {
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        .message-box input, .message-box textarea {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            color: #fff;
+            font-family: 'Hind Siliguri', sans-serif;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .message-box input:focus, .message-box textarea:focus {
+            border-color: #00f2fe;
+        }
+        .message-box button {
+            background: linear-gradient(45deg, #00f2fe, #ff007f);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            font-family: 'Hind Siliguri', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+        .message-box button:hover {
+            opacity: 0.9;
+        }
+
+        /* ফুটার */
+        .footer {
+            text-align: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 11px;
+            color: #555;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrapper">
+        
+        <!-- বড় ফুল-সাইজ ছবি -->
+        <div class="image-container">
+            <img src="sajid.jpg" alt="Sajid Ahmed Omar" class="full-pic">
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <!-- নাম ও সাবটাইটেল -->
+        <div class="profile-info">
+            <h1>সাজিদ আহমেদ ওমর</h1>
+            <p class="premium-subtitle">এক নীরব আওয়াজের সূক্ষ্ম যার অন্ত বা শুরু কিছুই নেই, সেই সূর্যের পথনালা।</p>
+        </div>
+
+        
+
+        <!-- অ্যাকশন লিংকカードসমূহ -->
+        <div class="links-container">
+            
+            <!-- অনলাইন লাইফ বাটন -->
+            <a href="online_life.html" class="action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot cyan"></span>
+                    <div class="text">
+                        <h3>ONLINE LIFE</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- অফলাইন লাইফ বাটন -->
+            <a href="offline_life.html" class="action-card offline-btn">
+                <div class="card-content">
+                    <span class="status-dot pink"></span>
+                    <div class="text">
+                        <h3>OFFLINE LIFE</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- কন্টাক্ট বাটন -->
+            <a href="contacts.html" class="action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot green"></span>
+                    <div class="text">
+                        <h3>CONTACT NUMBERS</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ফ্রেন্ড কন্টাক্ট বাটন -->
+            <a href="contacts.html" class="action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot red"></span>
+                    <div class="text">
+                        <h3>FRIEND CONTACTS</h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- হেল্পার টেক্সট নোটিশ -->
+            <div class="helper-text">
+                <span>যদি সাজিদকে না পাওয়া যায়, তাহলে এদেরকে জিজ্ঞাসা করতে পারেন:</span>
+            </div>
+
+            <!-- ফ্রেন্ড কন্টাক্ট [MALE] -->
+            <a href="friend_contacts_male.html" class="action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot red"></span>
+                    <div class="text">
+                        <h4 style="margin: 0; font-size: 15px; font-weight: 700;">FRIEND CONTACTS [MALE]</h4>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ফ্রেন্ড কন্টাক্ট [FEMALE] -->
+            <a href="friend_contacts_female.html" class="action-card online-btn">
+                <div class="card-content">
+                    <span class="status-dot red"></span>
+                    <div class="text">
+                        <h4 style="margin: 0; font-size: 15px; font-weight: 700;">FRIEND CONTACTS [FEMALE]</h4>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        
+
+        <!-- [NEW] প্রিমিয়াম মিনিমাল ফুটার -->
+        <div class="footer">
+            © 2026 SAJID AHMED OMAR. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
+
